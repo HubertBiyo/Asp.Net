@@ -1,0 +1,9 @@
+H:\Project\Asp.Net\JDAB.WindowsService\JDAB.WindowsService\JDAB.ProtectionService\bin\Debug\Hubert.DefendService.exe.config
+H:\Project\Asp.Net\JDAB.WindowsService\JDAB.WindowsService\JDAB.ProtectionService\bin\Debug\Hubert.DefendService.exe
+H:\Project\Asp.Net\JDAB.WindowsService\JDAB.WindowsService\JDAB.ProtectionService\bin\Debug\Hubert.DefendService.pdb
+H:\Project\Asp.Net\JDAB.WindowsService\JDAB.WindowsService\JDAB.ProtectionService\bin\Debug\NLog.dll
+H:\Project\Asp.Net\JDAB.WindowsService\JDAB.WindowsService\JDAB.ProtectionService\bin\Debug\NLog.xml
+H:\Project\Asp.Net\JDAB.WindowsService\JDAB.WindowsService\JDAB.ProtectionService\obj\Debug\Hubert.DefendService.csproj.CoreCompileInputs.cache
+H:\Project\Asp.Net\JDAB.WindowsService\JDAB.WindowsService\JDAB.ProtectionService\obj\Debug\Hubert.DefendService.csproj.CopyComplete
+H:\Project\Asp.Net\JDAB.WindowsService\JDAB.WindowsService\JDAB.ProtectionService\obj\Debug\Hubert.DefendService.exe
+H:\Project\Asp.Net\JDAB.WindowsService\JDAB.WindowsService\JDAB.ProtectionService\obj\Debug\Hubert.DefendService.pdb

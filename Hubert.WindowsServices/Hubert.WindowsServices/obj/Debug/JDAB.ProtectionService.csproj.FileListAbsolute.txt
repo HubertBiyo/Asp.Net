@@ -1,0 +1,10 @@
+H:\Project\Asp.Net\JDAB.WindowsService\JDAB.WindowsService\JDAB.ProtectionService\bin\Debug\JDAB.ProtectionService.exe.config
+H:\Project\Asp.Net\JDAB.WindowsService\JDAB.WindowsService\JDAB.ProtectionService\bin\Debug\JDAB.ProtectionService.exe
+H:\Project\Asp.Net\JDAB.WindowsService\JDAB.WindowsService\JDAB.ProtectionService\bin\Debug\JDAB.ProtectionService.pdb
+H:\Project\Asp.Net\JDAB.WindowsService\JDAB.WindowsService\JDAB.ProtectionService\bin\Debug\NLog.dll
+H:\Project\Asp.Net\JDAB.WindowsService\JDAB.WindowsService\JDAB.ProtectionService\bin\Debug\NLog.xml
+H:\Project\Asp.Net\JDAB.WindowsService\JDAB.WindowsService\JDAB.ProtectionService\obj\Debug\JDAB.ProtectionService.csproj.CoreCompileInputs.cache
+H:\Project\Asp.Net\JDAB.WindowsService\JDAB.WindowsService\JDAB.ProtectionService\obj\Debug\JDAB.ProtectionService.csproj.CopyComplete
+H:\Project\Asp.Net\JDAB.WindowsService\JDAB.WindowsService\JDAB.ProtectionService\obj\Debug\JDAB.ProtectionService.exe
+H:\Project\Asp.Net\JDAB.WindowsService\JDAB.WindowsService\JDAB.ProtectionService\obj\Debug\JDAB.ProtectionService.pdb
+H:\Project\Asp.Net\JDAB.WindowsService\JDAB.WindowsService\JDAB.ProtectionService\obj\Debug\JDAB.ProtectionService.csprojAssemblyReference.cache
