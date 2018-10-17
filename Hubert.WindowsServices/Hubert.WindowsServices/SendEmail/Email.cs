@@ -40,7 +40,7 @@ namespace Hubert.DefendService.SendEmail
             {
                 mMailMessage = new MailMessage();
                 mMailMessage.To.Add(toMail);
-                mMailMessage.From = new MailAddress(fromMail, "智慧消防");
+                mMailMessage.From = new MailAddress(fromMail, "名称");
                 mMailMessage.Subject = subject;
                 mMailMessage.Body = emailBody;
                 mMailMessage.IsBodyHtml = true;

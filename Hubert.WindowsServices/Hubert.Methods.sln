@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hubert.WindowsServices", "Hubert.WindowsServices", "{50CCC54A-FFD0-43B1-8FE6-62380E95E629}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hubert.DefendService", "..\JDAB.WindowsService\JDAB.WindowsService\JDAB.ProtectionService\Hubert.DefendService.csproj", "{C04E2241-2E10-41CC-A79B-302CBF7BDCDB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hubert.DefendService", "Hubert.WindowsServices\Hubert.DefendService.csproj", "{C04E2241-2E10-41CC-A79B-302CBF7BDCDB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

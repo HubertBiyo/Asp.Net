@@ -90,6 +90,8 @@ namespace Hubert.DefendService
                                 Logger.Info("服务已停止：" + service.ServiceName + "状态：" + service.Status, typeof(Service));
 
                                 Logger.Info("服务停止,发送邮件", typeof(Service));
+                                //调用发送短信的接口
+
                                 //服务已停止，发送邮件给通知
                                 SendEmail(serviceName);
                                 result = false;
