@@ -1,0 +1,5 @@
+F:\GitHubByHubert\Project\WcfService\WcfContractsEx02\bin\Release\WcfContractsEx02.dll
+F:\GitHubByHubert\Project\WcfService\WcfContractsEx02\bin\Release\WcfContractsEx02.pdb
+F:\GitHubByHubert\Project\WcfService\WcfContractsEx02\obj\Release\WcfContractsEx02.csproj.CoreCompileInputs.cache
+F:\GitHubByHubert\Project\WcfService\WcfContractsEx02\obj\Release\WcfContractsEx02.dll
+F:\GitHubByHubert\Project\WcfService\WcfContractsEx02\obj\Release\WcfContractsEx02.pdb

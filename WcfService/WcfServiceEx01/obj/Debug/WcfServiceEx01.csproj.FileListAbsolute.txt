@@ -1,0 +1,6 @@
+F:\GitHubByHubert\Project\WcfService\WcfServiceEx01\bin\WcfServiceEx01.dll.config
+F:\GitHubByHubert\Project\WcfService\WcfServiceEx01\bin\WcfServiceEx01.dll
+F:\GitHubByHubert\Project\WcfService\WcfServiceEx01\bin\WcfServiceEx01.pdb
+F:\GitHubByHubert\Project\WcfService\WcfServiceEx01\obj\Debug\WcfServiceEx01.csproj.CoreCompileInputs.cache
+F:\GitHubByHubert\Project\WcfService\WcfServiceEx01\obj\Debug\WcfServiceEx01.dll
+F:\GitHubByHubert\Project\WcfService\WcfServiceEx01\obj\Debug\WcfServiceEx01.pdb

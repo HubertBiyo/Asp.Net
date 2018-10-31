@@ -1,0 +1,11 @@
+F:\GitHubByHubert\Project\WcfService\ConsoleAppEx01Client\bin\Debug\ConsoleAppEx01Client.exe.config
+F:\GitHubByHubert\Project\WcfService\ConsoleAppEx01Client\bin\Debug\ConsoleAppEx01Client.exe
+F:\GitHubByHubert\Project\WcfService\ConsoleAppEx01Client\bin\Debug\ConsoleAppEx01Client.pdb
+F:\GitHubByHubert\Project\WcfService\ConsoleAppEx01Client\obj\Debug\ConsoleAppEx01Client.csprojAssemblyReference.cache
+F:\GitHubByHubert\Project\WcfService\ConsoleAppEx01Client\obj\Debug\ConsoleAppEx01Client.csproj.CoreCompileInputs.cache
+F:\GitHubByHubert\Project\WcfService\ConsoleAppEx01Client\obj\Debug\ConsoleAppEx01Client.exe
+F:\GitHubByHubert\Project\WcfService\ConsoleAppEx01Client\obj\Debug\ConsoleAppEx01Client.pdb
+F:\GitHubByHubert\Project\WcfService\ConsoleAppEx01Client\bin\Debug\WcfServiceEx01.dll
+F:\GitHubByHubert\Project\WcfService\ConsoleAppEx01Client\bin\Debug\WcfServiceEx01.pdb
+F:\GitHubByHubert\Project\WcfService\ConsoleAppEx01Client\bin\Debug\WcfServiceEx01.dll.config
+F:\GitHubByHubert\Project\WcfService\ConsoleAppEx01Client\obj\Debug\ConsoleAppEx01Client.csproj.CopyComplete

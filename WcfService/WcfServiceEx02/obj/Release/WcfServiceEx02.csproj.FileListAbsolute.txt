@@ -1,0 +1,10 @@
+F:\GitHubByHubert\Project\WcfService\WcfServiceEx02\bin\WcfServiceEx02.dll.config
+F:\GitHubByHubert\Project\WcfService\WcfServiceEx02\bin\WcfServiceEx02.dll
+F:\GitHubByHubert\Project\WcfService\WcfServiceEx02\bin\WcfServiceEx02.pdb
+F:\GitHubByHubert\Project\WcfService\WcfServiceEx02\bin\WcfContractsEx02.dll
+F:\GitHubByHubert\Project\WcfService\WcfServiceEx02\bin\WcfContractsEx02.pdb
+F:\GitHubByHubert\Project\WcfService\WcfServiceEx02\obj\Release\WcfServiceEx02.csprojAssemblyReference.cache
+F:\GitHubByHubert\Project\WcfService\WcfServiceEx02\obj\Release\WcfServiceEx02.csproj.CoreCompileInputs.cache
+F:\GitHubByHubert\Project\WcfService\WcfServiceEx02\obj\Release\WcfServiceEx02.csproj.CopyComplete
+F:\GitHubByHubert\Project\WcfService\WcfServiceEx02\obj\Release\WcfServiceEx02.dll
+F:\GitHubByHubert\Project\WcfService\WcfServiceEx02\obj\Release\WcfServiceEx02.pdb
