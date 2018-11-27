@@ -1,0 +1,7 @@
+E:\GitHub\Project\SolutionWcf\Hubert.Service\bin\Debug\Hubert.Service.dll.config
+E:\GitHub\Project\SolutionWcf\Hubert.Service\bin\Debug\Hubert.Service.dll
+E:\GitHub\Project\SolutionWcf\Hubert.Service\bin\Debug\Hubert.Service.pdb
+E:\GitHub\Project\SolutionWcf\Hubert.Service\obj\Debug\Hubert.Service.csproj.CoreCompileInputs.cache
+E:\GitHub\Project\SolutionWcf\Hubert.Service\obj\Debug\Hubert.Service.dll
+E:\GitHub\Project\SolutionWcf\Hubert.Service\obj\Debug\Hubert.Service.pdb
+E:\GitHub\Project\SolutionWcf\Hubert.Service\obj\Debug\Hubert.Service.csprojAssemblyReference.cache
