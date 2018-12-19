@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>个人管理平台</title>
+    <meta name="viewport" content="width=device-with,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="~/Content/css/base.css" rel="stylesheet" />
+    <script src="~/Content/js/vue.min.js"></script>
+    <link href="~/Content/lib/element-ui/theme-chalk/index.css" rel="stylesheet" />
+    <link href="~/Content/css/login.css" rel="stylesheet" />
+    <script src="~/Content/lib/jQuery/js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div id="app" class="login-app-base">
+        <div style="height:60px;"></div>
+        <el-form class="inner" :model="ruleForm" :rules="rules" ref="ruleForm">
+            <div class="login-box">
+                <div class="auth-logo">
+                    <img class="auth-img" src="~/Content/images/logo.png" alt="LeetCode">
+                    <div class="login-text-logo login-group">登录 BiyoPMS</div>
+                    <el-form-item prop="account" class="login-group">
+                        <el-input type="text" placeholder="请输入账户名" v-model="ruleForm.account" auto-complete="off"></el-input>
+                    </el-form-item>
+                    <el-form-item prop="password" class="login-group">
+                        <el-input type="password" placeholder="请输入密码" v-model="ruleForm.password" auto-complete="off"></el-input>
+                    </el-form-item>
+                    <el-form-item class="login-group">
+                        <el-button type="primary" :plain="true" v-on:click="submitForm('ruleForm')" class="el-button el-button--primary" style="width: 100%">登录</el-button>
+                    </el-form-item>
+                    <el-form-item class="login-deal">
+                        <a href="">忘记密码?</a>
+                        <a class="pull-right" href="">注册账号</a>
+                    </el-form-item>
+                </div>
+            </div>
+        </el-form>
+    </div>
+</body>
+</html>
+
+<!-- 引入组件库 -->
+<script src="~/Content/lib/element-ui/index.js"></script>
+<script>
+    var callbackUrl = '@ViewBag.CallBack';
+
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            account: '',
+            password: '',
+            ruleForm: {
+                account: '',
+                password: '',
+            },
+            rules: {
+                account: [
+                    { required: true, message: '请输入用户名', trigger: 'blur' },
+                    { min: 3, max: 5, message: '长度在 3 到 5 个字符', trigger: 'blur' }
+                ],
+                password: [
+                    { required: true, message: '请输入密码', trigger: 'change' }
+                ],
+            },
+        },
+        methods: {
+            submitForm(formName) {
+                var _this = this;
+                _this.$refs[formName].validate((valid) => {
+                    if (valid) {
+                        var accountValue = _this.ruleForm.account;
+                        var passwordValue = _this.ruleForm.password;
+                        $.post('/login/syslogin', { account: accountValue, password: passwordValue }, function (res) {
+                            console.log(res);
+                            if (res.Code == 0) {
+                                console.log(1);
+                                if (callbackUrl && callbackUrl != '')
+                                    window.location.href = callbackUrl;
+                                else
+                                    window.location.href = "/home/index";
+                            }
+                            if (res.Code == -1) {
+                                _this.$message({
+                                    message: '账户名或密码错误',
+                                    type: 'error',
+                                    center: true
+                                });
+                            }
+                        })
+                    } else {
+                        console.log('error submit!!');
+                        return false;
+                    }
+                });
+            },
+            resetForm(formName) {
+                this.$refs[formName].resetFields();
+            },
+        },
+    });
+    Vue.prototype.Message  = function (msg, t) {
+        this.Message ({
+            message: msg,
+            type: t
+        })
+    }
+</script>
+

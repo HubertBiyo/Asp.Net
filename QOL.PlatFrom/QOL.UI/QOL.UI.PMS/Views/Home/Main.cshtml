@@ -1,0 +1,47 @@
+﻿
+
+<<el-row :gutter="10" style="overflow:hidden">
+     <e-col :xs="4" :sm="6" :md="8" :lg="9" :xl="11"><div class="grid-content bg-purple" id="mountNode"></div></e-col>    
+</el-row>
+<script>/*Fixing iframe window.innerHeight 0 issue in Safari*/document.body.clientHeight;</script>
+<script src="~/Content/lib/g2/g2.min.js"></script>
+<script src="https://gw.alipayobjects.com/os/antv/pkg/_antv.data-set-0.8.9/dist/data-set.min.js"></script>
+<script>
+    var data = [{
+        year: '1951 年',
+        sales: 38
+    }, {
+        year: '1952 年',
+        sales: 52
+    }, {
+        year: '1956 年',
+        sales: 61
+    }, {
+        year: '1957 年',
+        sales: 145
+    }, {
+        year: '1958 年',
+        sales: 48
+    }, {
+        year: '1959 年',
+        sales: 38
+    }, {
+        year: '1960 年',
+        sales: 38
+    }, {
+        year: '1962 年',
+        sales: 38
+    }];
+    var chart = new G2.Chart({
+        container: 'mountNode',
+        forceFit: true,
+        height: window.innerHeight
+    });
+    chart.source(data);
+    chart.scale('sales', {
+        tickInterval: 20
+    });
+    chart.interval().position('year*sales');
+    chart.render();
+</script>
+

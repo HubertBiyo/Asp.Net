@@ -1,0 +1,63 @@
+2018-07-11 22:14:50.14 ERROR QOL.UI.PMS.Controllers.LoginController
+Message : SysLogin is error.
+Exception : 指定的转换无效。
+StackTrace :
+   在 QOL.Common.Extensions.DataReaderExtension.ReadInt(SqlDataReader reader, String name) 位置 E:\Hubert_GitHub\QOL.PlatFrom\QOL.Common\QOL.Common\Extensions\DataReaderExtension.cs:行号 15
+   在 QOL.Data.Account.SqlDataProviders.SqlUserDataProvider.Find(String Code) 位置 E:\Hubert_GitHub\QOL.PlatFrom\QOL.Data\QOL.Data.Account\SqlDataProviders\SqlUserDataProvider.cs:行号 38
+   在 QOL.Service.Account.UserService.GetUser(String Code) 位置 E:\Hubert_GitHub\QOL.PlatFrom\QOL.Service\QOL.Service.Account\UserService.cs:行号 16
+   在 QOL.UI.PMS.Controllers.LoginController.Syslogin(String account, String password) 位置 E:\Hubert_GitHub\QOL.PlatFrom\QOL.UI\QOL.UI.PMS\Controllers\LoginController.cs:行号 27
+
+2018-07-11 22:14:52.14 ERROR QOL.UI.PMS.Controllers.LoginController
+Message : SysLogin is error.
+Exception : 指定的转换无效。
+StackTrace :
+   在 QOL.Common.Extensions.DataReaderExtension.ReadInt(SqlDataReader reader, String name) 位置 E:\Hubert_GitHub\QOL.PlatFrom\QOL.Common\QOL.Common\Extensions\DataReaderExtension.cs:行号 15
+   在 QOL.Data.Account.SqlDataProviders.SqlUserDataProvider.Find(String Code) 位置 E:\Hubert_GitHub\QOL.PlatFrom\QOL.Data\QOL.Data.Account\SqlDataProviders\SqlUserDataProvider.cs:行号 38
+   在 QOL.Service.Account.UserService.GetUser(String Code) 位置 E:\Hubert_GitHub\QOL.PlatFrom\QOL.Service\QOL.Service.Account\UserService.cs:行号 16
+   在 QOL.UI.PMS.Controllers.LoginController.Syslogin(String account, String password) 位置 E:\Hubert_GitHub\QOL.PlatFrom\QOL.UI\QOL.UI.PMS\Controllers\LoginController.cs:行号 27
+
+2018-07-11 22:14:53.14 ERROR QOL.UI.PMS.Controllers.LoginController
+Message : SysLogin is error.
+Exception : 指定的转换无效。
+StackTrace :
+   在 QOL.Common.Extensions.DataReaderExtension.ReadInt(SqlDataReader reader, String name) 位置 E:\Hubert_GitHub\QOL.PlatFrom\QOL.Common\QOL.Common\Extensions\DataReaderExtension.cs:行号 15
+   在 QOL.Data.Account.SqlDataProviders.SqlUserDataProvider.Find(String Code) 位置 E:\Hubert_GitHub\QOL.PlatFrom\QOL.Data\QOL.Data.Account\SqlDataProviders\SqlUserDataProvider.cs:行号 38
+   在 QOL.Service.Account.UserService.GetUser(String Code) 位置 E:\Hubert_GitHub\QOL.PlatFrom\QOL.Service\QOL.Service.Account\UserService.cs:行号 16
+   在 QOL.UI.PMS.Controllers.LoginController.Syslogin(String account, String password) 位置 E:\Hubert_GitHub\QOL.PlatFrom\QOL.UI\QOL.UI.PMS\Controllers\LoginController.cs:行号 27
+
+2018-07-11 22:14:53.14 ERROR QOL.UI.PMS.Controllers.LoginController
+Message : SysLogin is error.
+Exception : 指定的转换无效。
+StackTrace :
+   在 QOL.Common.Extensions.DataReaderExtension.ReadInt(SqlDataReader reader, String name) 位置 E:\Hubert_GitHub\QOL.PlatFrom\QOL.Common\QOL.Common\Extensions\DataReaderExtension.cs:行号 15
+   在 QOL.Data.Account.SqlDataProviders.SqlUserDataProvider.Find(String Code) 位置 E:\Hubert_GitHub\QOL.PlatFrom\QOL.Data\QOL.Data.Account\SqlDataProviders\SqlUserDataProvider.cs:行号 38
+   在 QOL.Service.Account.UserService.GetUser(String Code) 位置 E:\Hubert_GitHub\QOL.PlatFrom\QOL.Service\QOL.Service.Account\UserService.cs:行号 16
+   在 QOL.UI.PMS.Controllers.LoginController.Syslogin(String account, String password) 位置 E:\Hubert_GitHub\QOL.PlatFrom\QOL.UI\QOL.UI.PMS\Controllers\LoginController.cs:行号 27
+
+2018-07-11 22:14:54.14 ERROR QOL.UI.PMS.Controllers.LoginController
+Message : SysLogin is error.
+Exception : 指定的转换无效。
+StackTrace :
+   在 QOL.Common.Extensions.DataReaderExtension.ReadInt(SqlDataReader reader, String name) 位置 E:\Hubert_GitHub\QOL.PlatFrom\QOL.Common\QOL.Common\Extensions\DataReaderExtension.cs:行号 15
+   在 QOL.Data.Account.SqlDataProviders.SqlUserDataProvider.Find(String Code) 位置 E:\Hubert_GitHub\QOL.PlatFrom\QOL.Data\QOL.Data.Account\SqlDataProviders\SqlUserDataProvider.cs:行号 38
+   在 QOL.Service.Account.UserService.GetUser(String Code) 位置 E:\Hubert_GitHub\QOL.PlatFrom\QOL.Service\QOL.Service.Account\UserService.cs:行号 16
+   在 QOL.UI.PMS.Controllers.LoginController.Syslogin(String account, String password) 位置 E:\Hubert_GitHub\QOL.PlatFrom\QOL.UI\QOL.UI.PMS\Controllers\LoginController.cs:行号 27
+
+2018-07-11 22:14:55.14 ERROR QOL.UI.PMS.Controllers.LoginController
+Message : SysLogin is error.
+Exception : 指定的转换无效。
+StackTrace :
+   在 QOL.Common.Extensions.DataReaderExtension.ReadInt(SqlDataReader reader, String name) 位置 E:\Hubert_GitHub\QOL.PlatFrom\QOL.Common\QOL.Common\Extensions\DataReaderExtension.cs:行号 15
+   在 QOL.Data.Account.SqlDataProviders.SqlUserDataProvider.Find(String Code) 位置 E:\Hubert_GitHub\QOL.PlatFrom\QOL.Data\QOL.Data.Account\SqlDataProviders\SqlUserDataProvider.cs:行号 38
+   在 QOL.Service.Account.UserService.GetUser(String Code) 位置 E:\Hubert_GitHub\QOL.PlatFrom\QOL.Service\QOL.Service.Account\UserService.cs:行号 16
+   在 QOL.UI.PMS.Controllers.LoginController.Syslogin(String account, String password) 位置 E:\Hubert_GitHub\QOL.PlatFrom\QOL.UI\QOL.UI.PMS\Controllers\LoginController.cs:行号 27
+
+2018-07-11 22:15:21.15 ERROR QOL.UI.PMS.Controllers.LoginController
+Message : SysLogin is error.
+Exception : 指定的转换无效。
+StackTrace :
+   在 QOL.Common.Extensions.DataReaderExtension.ReadInt(SqlDataReader reader, String name) 位置 E:\Hubert_GitHub\QOL.PlatFrom\QOL.Common\QOL.Common\Extensions\DataReaderExtension.cs:行号 15
+   在 QOL.Data.Account.SqlDataProviders.SqlUserDataProvider.Find(String Code) 位置 E:\Hubert_GitHub\QOL.PlatFrom\QOL.Data\QOL.Data.Account\SqlDataProviders\SqlUserDataProvider.cs:行号 38
+   在 QOL.Service.Account.UserService.GetUser(String Code) 位置 E:\Hubert_GitHub\QOL.PlatFrom\QOL.Service\QOL.Service.Account\UserService.cs:行号 16
+   在 QOL.UI.PMS.Controllers.LoginController.Syslogin(String account, String password) 位置 E:\Hubert_GitHub\QOL.PlatFrom\QOL.UI\QOL.UI.PMS\Controllers\LoginController.cs:行号 27
+

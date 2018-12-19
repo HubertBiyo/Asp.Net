@@ -1,0 +1,87 @@
+﻿body {
+    background-color: rgba(111, 156, 105, 0.5);
+}
+.header {
+    line-height: 60px;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.login-app-base {
+    text-align: center;
+    height: 100%;
+}
+
+.inner {
+    width: 100%;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+    height: 75%;
+}
+
+.login-box {
+    width: 360px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    background: rgba(69, 167, 57, 0.5);
+}
+
+.auth-logo {
+    margin-top: 50px;
+    height: 70%;
+}
+
+.auth-img {
+    height: 70px;
+}
+
+.login-group {
+    position: relative;
+    padding: 5px;
+}
+
+.login-deal {
+    text-align: left;
+}
+
+.login-text-logo {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.login-deal a {
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #0088cc;
+}
+
+a:hover {
+    color: #000;
+}
+
+.pull-right {
+    float: right!important;
+    margin-right: 20px;
+}
+
+.input-feedback {
+    cursor: text;
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    color: #d9534f;
+    margin-top: .25rem;
+    background: white;
+    padding-left: 15px;
+}
+.input-feedback p {
+        color: #ef534e;
+        font-size: 12px;
+        margin-left: 100px;
+        margin-top: .2rem;
+        margin-bottom: 0;
+}

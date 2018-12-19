@@ -1,0 +1,10 @@
+2018-08-16 23:16:03.16 ERROR QOL.Service.Account.TrainInformationService
+Message : Search TrainInformation All List is error
+Exception : 在没有任何数据时进行无效的读取尝试。
+StackTrace :
+   在 System.Data.SqlClient.SqlDataReader.CheckHeaderIsReady(Int32 columnIndex, Boolean permitAsync, String methodName)
+   在 System.Data.SqlClient.SqlDataReader.IsDBNull(Int32 i)
+   在 QOL.Common.Extensions.DataReaderExtension.ReadGuid(SqlDataReader reader, String name) 位置 E:\Hubert_GitHub\QOL.PlatFrom\QOL.Common\QOL.Common\Extensions\DataReaderExtension.cs:行号 33
+   在 QOL.Data.Account.SqlDataProviders.SqlTrainInformationDataProvider.SearchTrainAllList() 位置 E:\Hubert_GitHub\QOL.PlatFrom\QOL.Data\QOL.Data.Account\SqlDataProviders\SqlTrainInformationDataProvider.cs:行号 240
+   在 QOL.Service.Account.TrainInformationService.SearchTrainAllList() 位置 E:\Hubert_GitHub\QOL.PlatFrom\QOL.Service\QOL.Service.Account\TrainInformationService.cs:行号 92
+

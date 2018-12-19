@@ -1,0 +1,6 @@
+E:\Hubert_GitHub\QOL.PlatFrom\QOL.Entities\QOL.Entities.Account\bin\Debug\QOL.Entities.Account.dll
+E:\Hubert_GitHub\QOL.PlatFrom\QOL.Entities\QOL.Entities.Account\bin\Debug\QOL.Entities.Account.pdb
+E:\Hubert_GitHub\QOL.PlatFrom\QOL.Entities\QOL.Entities.Account\obj\Debug\QOL.Entities.Account.csproj.CoreCompileInputs.cache
+E:\Hubert_GitHub\QOL.PlatFrom\QOL.Entities\QOL.Entities.Account\obj\Debug\QOL.Entities.Account.dll
+E:\Hubert_GitHub\QOL.PlatFrom\QOL.Entities\QOL.Entities.Account\obj\Debug\QOL.Entities.Account.pdb
+E:\Hubert_GitHub\QOL.PlatFrom\QOL.Entities\QOL.Entities.Account\obj\Debug\QOL.Entities.Account.csprojAssemblyReference.cache

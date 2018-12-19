@@ -1,0 +1,209 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body, html {
+
+    height: 100%;
+    font-size: 14px;
+    background: #fff;
+    font-family: "Microsoft YaHei", Arial;
+}
+#app {
+    margin-right:30px;
+} 
+.systemBox {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 0.8rem;
+}
+
+.system {
+    width: 20%;
+    height: 8rem;
+    padding: 20px 0px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    margin: 0px 2%;
+    display: inline-block;
+}
+
+.systemTitle {
+    font-size: 1.0em;
+    text-align: left;
+    margin-left: 2.4rem;
+    margin-top: -0.8rem;
+}
+
+.statisticalBox {
+    width: 100%;
+    background: rgba(224, 215, 215, 0.1);
+    border-radius: 0.6rem;
+    padding: 2rem 0rem;
+    margin-top: 0.8rem;
+}
+
+.statisticalContent {
+    width: calc(100% - 2rem);
+    height: 80px;
+    margin-left: 15%;
+    text-align: center;
+}
+
+.userNumberBox {
+    width: 8rem;
+    height: 5rem;
+    background: rgb(245, 243, 243);
+    border-radius: 6px;
+    margin: 1.4em 0.8em;
+    color:#000;
+    
+}
+
+.userNumber {
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.number {
+    font-size: 1.5em;
+    margin-top: 3px;
+}
+
+.left {
+    float: left;
+    
+}
+
+.right {
+    float: right;
+   
+}
+
+.clear {
+    clear: both;
+}
+
+.dataBG {
+    width: calc(100% - 24px);
+    margin: 2rem 1.2rem;
+    background: #f5f3f3;
+    border-radius: 4px;
+    height: 50px;
+}
+
+.dataName {
+    font-size: 1em;
+    margin-top: 10px;
+    margin-left: 10px;
+    line-height: 50px;
+}
+
+.dataText {
+    font-size: 1.0em;
+    margin-top: 4px;
+    margin-right: 10px;
+    color:#0c6;
+    line-height: 42px;
+}
+
+.leftBox {
+    width: 20%;
+    margin-left: 5rem;
+    margin-top:70px !important;
+}
+
+.centerBox {
+    width: 55%;
+    margin: 0.8rem;
+    height: 52rem;
+    background: rgba(224, 215, 215, 0.1);
+    border-radius: 6px;
+    padding: 20px 0px;
+    margin-top:80px !important;     
+    /*min-width: 40rem;*/
+}
+
+.rightBox {
+    margin-left:0.8rem;
+    width: 25%;
+    margin-right: -8.5rem; margin-top:70px !important;
+}
+
+.rightContent {
+    width: 100%;
+    margin-top: 0.8rem;
+    background:rgb(252, 251, 251);
+    border-radius: 6px;
+    padding-top: 2rem;
+}
+
+.imageAPP {
+    margin: 1.4em 0.8em;
+}
+.imageAPPBox {
+    width: 90%;
+    margin: 0.2rem 5%;
+    zoom: 1;
+}
+.imageAPPBox:after {
+    clear: both;
+    content: '';
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+.informationBox {
+    width: calc(100% - 40px);
+    height: 110px;
+    margin: 20px 20px;
+    background: rgba(189, 180, 180, 0.1);
+}
+
+/*后加的*/
+.informationImgBox {
+    margin:14px;
+    width: 10rem;
+    height: 5rem;
+    float: left;
+    border:3px solid rgba(128, 121, 121, 0.12);
+}
+
+.informationRightBox {
+    margin-left: 0.8rem;
+    float: left;
+    width: calc(100% - 22rem);
+    position: relative;
+}
+
+.informationTitle {
+    font-size: 1.0em;
+    margin-top: 1rem;
+}
+
+.informationConten {
+    font-size: 1em;
+    margin-top: 0.2rem;
+    margin-left:0.2rem;
+}
+
+.detailsBtn {
+    font-size: 1em;
+    position: absolute;
+    right: -7rem;
+    margin-top: 1rem;
+}
+
+.bottomBox {
+    width: 90%;
+    margin: 0rem 0%;
+}
+
+/*.tr {
+    margin-top:-1rem;
+}*/

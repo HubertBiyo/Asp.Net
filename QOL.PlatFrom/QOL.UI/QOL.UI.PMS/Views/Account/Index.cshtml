@@ -1,0 +1,329 @@
+﻿<div id="app" v-loading="loadAccountIndex">
+    <section class="float-left mut-left">
+        <my-menu v-bind:active="active"></my-menu>
+    </section>
+    <section class="float-left main-container">
+        <div class="admin-from float-left">
+            <el-button type="primary" size="medium" v-on:click="addhuman">新增</el-button>
+        </div>
+        <div class="table-1">
+            <template>
+                <el-table :data="humanList" border v-loading="loadingHumanList" element-loading-text="拼命加载中">
+                    <el-table-column type="index" width="50"></el-table-column>
+                    <el-table-column prop="Code" label="编号" >
+                    </el-table-column>
+                    <el-table-column prop="Name" label="姓名" width="160">
+                    </el-table-column>
+                    <el-table-column prop="Sex" :formatter="formatRole" label="性别">
+                    </el-table-column> 
+                    <el-table-column prop="Birthday" :formatter="dateFormat" label="生日" > 
+                    </el-table-column>
+                    <el-table-column prop="Phone" label="手机号">
+                    </el-table-column>
+                    <el-table-column prop="LocalAddress" label="地址">
+                    </el-table-column>
+                    <el-table-column fixed="right" label="操作" width="160">
+                        <template slot-scope="scope">
+                            <el-button v-on:click="handelEdit(scope.row)" type="primary" plain size="small">编辑</el-button>
+                            <el-button type="primary" plain v-on:click="showdelete(scope.row.Id)" size="small">删除</el-button>
+                        </template>
+                    </el-table-column>
+                </el-table>
+                <br />
+                <div class="page-item" id="pageDiv">
+                </div>
+            </template>
+        </div>
+
+    </section>
+
+    <!--element弹框-->
+    <el-dialog :title="titleMap[dialogStatus]" :visible.sync="dialogFormVisible">
+        <el-form :model="add" label-width="80px" :rules="rules" ref="add">
+
+            <el-row>
+                <el-col :span="12">
+                    <el-form-item label="姓名" prop="Name">
+                        <el-input v-model="add.Name" auto-complete="off"></el-input>
+                    </el-form-item>
+                </el-col>
+                <el-col :span="12">
+                    <el-form-item label="手机号码" prop="Phone">
+                        <el-input v-model="add.Phone" auto-complete="off"></el-input>
+                    </el-form-item>
+                </el-col>
+
+            </el-row>
+
+            <el-row>
+                <el-col :span="12">
+                    <el-form-item label="生日" prop="Birthday">
+                        <div>
+                            <el-date-picker v-model="add.Birthday" v-on:change="getTime" value-format="yyyy-MM-dd" type="date" placeholder="选择日期">
+                            </el-date-picker>
+                        </div>
+                    </el-form-item>
+                </el-col>
+                <el-col :span="12">
+                    <el-form-item label="性别" prop="Sex">
+                        <el-select v-model="add.Sex" placeholder="请选择">
+                            <el-option v-for="item in options"
+                                       :key="item.value"
+                                       :label="item.label"
+                                       :value="item.value">
+                            </el-option>
+                        </el-select>
+                    </el-form-item>
+                </el-col>
+            </el-row>
+            <el-form-item label="地址" prop="LocalAddress">
+                <el-input type="textarea" :row="2" v-model="add.LocalAddress" auto-complete="off"></el-input>
+            </el-form-item>
+        </el-form>
+        <div slot="footer" class="dialog-footer">
+            <el-button v-on:click="dialogFormVisible=false">取 消</el-button>
+            <el-button type="primary" v-on:click="savehuman('add')">确 定</el-button>
+        </div>
+    </el-dialog>
+</div>
+<script>
+    /**
+     *手机号验证
+     */
+    var checkPhone = (rule, value, callback) => {
+        if (!value) {
+            return callback(new Error('手机号不能为空'));
+        } else {
+            const reg = /^1[3|4|5|7|8][0-9]\d{8}$/
+            console.log(reg.test(value));
+            if (reg.test(value)) {
+                callback();
+            } else {
+                return callback(new Error('请输入正确的手机号'));
+            }
+        }
+    };
+
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            IsHaveList: false,
+            loadAccountIndex: false,
+            pageelement: '#pageDiv',
+            condition: {
+                pageindex: 1,
+                pagesize: 10,
+            },
+            options: [{
+                value: 0,
+                label: '男'
+            }, {
+                value: 1,
+                label: '女'
+            }],
+            value: '',
+            active: 'human',
+            humanList: [],
+            addtitle: '添加用户',
+            addtype: 'add',
+            add: {
+                Name: '',
+                Sex: '',
+                Birthday: '',
+                Phone: '',
+                LocalAddress: '',
+            },
+            dialogFormVisible: false,
+            titleMap: {
+                addHuman: '新增人员',
+                editHuman: '编辑人员'
+            },
+            dialogStatus: '',
+            loadingHumanList: false,
+            rules: {
+                Name: [
+                    { required: true, message: '请输入姓名', trigger: 'blur' },
+                    { min: 2, max: 10, message: '长度在 2 到 10 个字符', trigger: 'blur' }
+                ],
+                Sex: [
+                    { required: true, message: '请选择性别', trigger: 'change' }
+                ],
+                Birthday: [
+                    { required: true, message: '请选择日期' },
+                    { type: 'date', message: '请选择您的出生日期', trigger: 'change' }
+                ],
+                Phone: [
+                    { validator: this.checkPhone, trigger: 'blur' },
+                ],
+                LocalAddress: [
+                    { required: true, message: '请输入地址', trigger: 'blur' },
+                    { min: 2, max: 50, message: '长度在2到50个字符', trigger: 'blur' }
+                ]
+            },
+        },
+        methods: {
+            getTime: function (val) {
+                this.add.Birthday = new Date(moment(val).format("YYYY-MM-DD"));
+            },
+            addhuman: function () {
+                this.dialogFormVisible = true;
+                this.addtype = 'add';
+                this.dialogStatus = "addHuman";
+                this.add = {
+                    Name: '',
+                    Sex: '',
+                    Birthday: '',
+                    Phone: '',
+                    LocalAddress: '',
+                };
+            },
+            handelEdit: function (item) {
+                this.dialogFormVisible = true;
+                this.addtype = 'edit';
+                this.dialogStatus = "editHuman"
+                this.add = item;
+                this.add.Birthday = new Date(moment(this.add.Birthday).format("YYYY-MM-DD"));
+            },
+            loaddata: function () {
+                $.post('/Account/AccountList', this.condition, function (res) {
+                    vm.$data.IsHaveList = true;
+                    if (res.Code == 0) {
+                        this.loadingHumanList = false;
+                        vm.$data.humanList = res.Data;
+                        vm.paging(res.Total);
+                    } else {
+                        this.loadingHumanList = true;
+                    }
+                })
+            },
+            savehuman: function (formName) {
+                var _this = this;
+                this.$refs[formName].validate((valid) => {
+                    if (valid) {
+                        var url = '/account/add';
+                        if (_this.addtype == 'edit') {
+                            url = '/account/updateHuman';
+                        }
+                        _this.add.Birthday = moment(_this.add.Birthday).format("YYYY-MM-DD");
+                        console.log(_this.add.Birthday);
+                        $.ajax({
+                            type: 'post',
+                            url: url,
+                            data: _this.add,
+                            dataType: "json",
+                            success: function (res) {
+                                if (res.Code == 0) {
+                                    vm.$data.dialogFormVisible = false;
+                                    _this.$message({
+                                        message: res.Message,
+                                        type: 'success',
+                                        center: true
+                                    });
+                                    vm.loaddata();
+                                } else {
+                                    _this.$message({
+                                        message: res.Message,
+                                        type: 'error',
+                                        center: true
+                                    });
+                                }
+                            },
+                            error: function (d) {
+                                _this.$message({
+                                    message: "服务器异常",
+                                    type: 'error',
+                                    center: true
+                                });
+                            }
+                        })
+                    } else {
+                        return false;
+                    }
+                });
+
+
+            },
+            showdelete: function (id) {
+                var _this = this;
+                _this.$confirm('您确认删除此记录吗?', '提示', {
+                    confirmButtonText: '确定',
+                    cancelButtonText: '取消',
+                    type: 'warning'
+                }).then(function () {
+                    $.ajax({
+                        type: 'post',
+                        url: '/account/deleteHuman',
+                        data: { id: id },
+                        dataType: 'Json',
+                        success: function (res) {
+                            if (res.Code == 0) {
+                                _this.$message({
+                                    type: 'success',
+                                    message: res.Message
+                                });
+                                vm.loaddata();
+                            }
+                            else {
+                                _this.$message({
+                                    type: 'success',
+                                    message: res.Message
+                                });
+                            }
+                        },
+                        error: function (d) {
+                            _this.$message({
+                                type: 'success',
+                                message: '服务器异常'
+                            });
+                        }
+
+                    })
+                })
+            },
+            /*日期格式*/
+            dateFormat: function (row, column) {
+                var date = row[column.property];
+                if (date == undefined) {
+                    return "";
+                }
+                return moment(date).format("YYYY-MM-DD");
+            },
+            /*性别*/
+            formatRole: function (row, column) {
+                return row.Sex == '0' ? "男" : row.Sex == '1' ? "女" : "aaa";
+            },
+            /*分页*/
+            paging: function (total) {
+                $(vm.$data.pageelement).bootstrapPaginator({
+                    currentPage: vm.$data.condition.pageindex,
+                    totalPages: Math.ceil(total / vm.$data.condition.pagesize),
+                    numberOfPages: 5,
+                    onPageClicked: function (e, s, a, p) {
+                        if (vm.$data.condition.pageindex != p) {
+                            vm.$data.condition.pageindex = p;
+                            vm.loaddata();
+                        }
+                    }
+                });
+
+            },
+        },
+        filters: {
+            SexType: function (v) {
+                switch (v) {
+                    case 0:
+                        return '男';
+                    case 1:
+                        return '女';
+
+                    default:
+                        return v;
+                }
+            }
+        }
+    })
+    vm.loaddata();
+    $(function () {
+    })
+
+</script>
